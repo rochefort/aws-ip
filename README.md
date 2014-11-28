@@ -1,4 +1,4 @@
-# Aws::Ip
+# AwsIp
 
 find out AWS IP address
 
