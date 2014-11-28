@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__) + '/../lib'))
+require 'aws_ip'
+
+fail ArgumentError, 'invalid argument' if ARGV.size == 0
+
+aws = AwsIp.new
+puts aws.env
+puts aws.fetch ARGV[0]
