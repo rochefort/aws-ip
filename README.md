@@ -45,14 +45,14 @@ puts aws_ip.fetch('50.19.0.3')
 {"ip_prefix"=>"50.19.0.0/16", "region"=>"us-east-1", "service"=>"AMAZON"}
 {"ip_prefix"=>"50.19.0.0/16", "region"=>"us-east-1", "service"=>"EC2"}
 ```
-
+  
 2. Fetch ranges ip in range:
 ```ruby
 aws_ip = AwsIp.new
 puts aws_ip.include?('50.19.0.3')
 true
 ```
-
+  
 3. Show ranges info:
 ```ruby
 aws_ip = AwsIp.new
@@ -60,13 +60,13 @@ puts aws_ip.env
 syncToken : 1417097828
 createDate: 2014-11-27-14-21-01
 ```
-
+  
 4. Update ip ranges:
 ```ruby
 aws_ip = AwsIp.new
 aws_ip.update
 ```
-
+  
 5. Show all ranges:
 ```ruby
 aws_ip = AwsIp.new
