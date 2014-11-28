@@ -46,7 +46,7 @@ puts aws_ip.fetch('50.19.0.3')
 {"ip_prefix"=>"50.19.0.0/16", "region"=>"us-east-1", "service"=>"EC2"}
 ```
   
-2.Find out UO address in range:
+2.Find out IP address in range:
 ```ruby
 aws_ip = AwsIp.new
 puts aws_ip.include?('50.19.0.3')
