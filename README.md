@@ -40,41 +40,41 @@ require 'aws_ip'
 
 1.Fetch ranges by IP address:
 ```ruby
-aws_ip = AwsIp.new
-puts aws_ip.fetch('50.19.0.3')
+> aws_ip = AwsIp.new
+> puts aws_ip.fetch('50.19.0.3')
 {"ip_prefix"=>"50.19.0.0/16", "region"=>"us-east-1", "service"=>"AMAZON"}
 {"ip_prefix"=>"50.19.0.0/16", "region"=>"us-east-1", "service"=>"EC2"}
 ```
-  
+
 2.Find out IP address in range:
 ```ruby
-aws_ip = AwsIp.new
-puts aws_ip.include?('50.19.0.3')
+> aws_ip = AwsIp.new
+> puts aws_ip.include?('50.19.0.3')
 true
 ```
-  
+
 3.Show ranges info:
 ```ruby
-aws_ip = AwsIp.new
-puts aws_ip.env
+> aws_ip = AwsIp.new
+> puts aws_ip.env
 syncToken : 1417097828
 createDate: 2014-11-27-14-21-01
 ```
-  
+
 4.Update ranges:
 ```ruby
-aws_ip = AwsIp.new
-aws_ip.update
+> aws_ip = AwsIp.new
+> aws_ip.update
 ```
-  
+
 5.Show all ranges:
 ```ruby
-aws_ip = AwsIp.new
-puts aws_ip.ranges
+> aws_ip = AwsIp.new
+> puts aws_ip.ranges
 　
     or
 　
-puts aws_ip.all_ranges
+> puts aws_ip.all_ranges
 　
 {"ip_prefix"=>"50.19.0.0/16", "region"=>"us-east-1", "service"=>"AMAZON"}
 {"ip_prefix"=>"54.239.98.0/24", "region"=>"us-east-1", "service"=>"AMAZON"}
